@@ -2,6 +2,7 @@ import React from 'react';
 import { LayoutWrapper } from './Layout.styled';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { Outlet } from 'react-router-dom';
 
 function MainLayout(props) {
     const { children } = props;
@@ -10,7 +11,7 @@ function MainLayout(props) {
         <LayoutWrapper>
             <div>
                 <Navbar />
-                {children}
+                <Outlet/>
             </div>
             <Footer />
         </LayoutWrapper>

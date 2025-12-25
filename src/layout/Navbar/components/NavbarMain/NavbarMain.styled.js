@@ -54,7 +54,10 @@ export const NavigationItems = styled.div`
     display: flex;
     gap: 30px;
     align-items: center;
-
+    a{
+        text-decoration: none;
+        color: #454545;
+    }
     .item {
         text-align: center;
     }
