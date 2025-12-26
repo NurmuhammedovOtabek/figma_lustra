@@ -105,6 +105,86 @@ function BasketKorzina(props) {
             </div>
           </div>
         </div>
+        <div className="korzinaMobile">
+          <div className="korzina-item">
+            <div className="imgdiv">
+              <img src={lustra} alt="" />
+            </div>
+            <div className="yozuv">
+              <div className="img-price">
+                <div className="priceWrapper">
+                  <p>Встраиваемый светильник Novotech</p>
+                  <p className="price">6 399₽</p>
+                </div>
+              </div>
+              <div>Светильник RADUGA COMBO XS Промышленное Освещение...</div>
+
+              <div>RAD-COMBO-50/XXX/230/XXX/</div>
+
+              <div className="counterDel">
+                <div className="counter">
+                  <button
+                    onClick={() => {
+                      setCount(count - 1);
+                    }}
+                  >
+                    -
+                  </button>
+                  <span>{count}</span>
+                  <button
+                    onClick={() => {
+                      setCount(count + 1);
+                    }}
+                  >
+                    +
+                  </button>
+                </div>
+                <div className="delIcon">
+                  <DeletIcon />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="korzina-item">
+            <div className="imgdiv">
+              <img src={lustra} alt="" />
+            </div>
+            <div className="yozuv">
+              <div className="img-price">
+                <div className="priceWrapper">
+                  <p>Встраиваемый светильник Novotech</p>
+                  <p className="price">6 399₽</p>
+                </div>
+              </div>
+              <div>Светильник RADUGA COMBO XS Промышленное Освещение...</div>
+
+              <div>RAD-COMBO-50/XXX/230/XXX/</div>
+
+              <div className="counterDel">
+                <div className="counter">
+                  <button
+                    onClick={() => {
+                      setCount(count - 1);
+                    }}
+                  >
+                    -
+                  </button>
+                  <span>{count}</span>
+                  <button
+                    onClick={() => {
+                      setCount(count + 1);
+                    }}
+                  >
+                    +
+                  </button>
+                </div>
+                <div className="delIcon">
+                  <DeletIcon />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </BasketKozinaMain>
     );
 }

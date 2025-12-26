@@ -6,7 +6,7 @@ import HomeBlog from './components/HomeBlog';
 function Home(props) {
     return (
         <div>
-            <HomeSlide/>
+            <HomeSlide/> 
             <HomePosts/>
             <HomeBlog/>
         </div>

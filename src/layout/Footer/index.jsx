@@ -18,15 +18,19 @@ function Footer(props) {
     <FooterWrapper>
       <div className="container">
         <FooterLeft>
-          <img src="/logo-foot.svg" alt="Logo Footer" className="imglogo"/>
+          <img src="/logo-foot.svg" alt="Logo Footer" className="imglogo" />
           <PhoneLinkFooter href="tel:88008904656">
             8 (800) 890-46-56
           </PhoneLinkFooter>
 
           <img src={PaymentLogos} alt="Payments" />
 
-          <a href="/" className="a">Политика конфидециальности</a>
-          <a href="/" className="a">Пользовательское соглашение</a>
+          <a href="/" className="a">
+            Политика конфидециальности
+          </a>
+          <a href="/" className="a">
+            Пользовательское соглашение
+          </a>
           <WrapperIcon>
             <SocialIcon>VK</SocialIcon>
             <SocialIcon>VK</SocialIcon>
@@ -37,7 +41,7 @@ function Footer(props) {
           <ForBuyFooter>
             <h3>Покупателям</h3>
             <div>
-              <CustomNavLinkFooter to="/">О компании</CustomNavLinkFooter>
+              <CustomNavLinkFooter to="/about">О компании</CustomNavLinkFooter>
               <CustomNavLinkFooter to="/">
                 Доставка и оплата
               </CustomNavLinkFooter>

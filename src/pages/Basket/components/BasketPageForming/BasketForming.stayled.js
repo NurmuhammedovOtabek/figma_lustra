@@ -57,4 +57,51 @@ export const FormingWrapper = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 635px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    margin-top: 10px;
+    padding: 20px 15px;
+    .forming {
+      border-bottom: 1px solid #454545;
+      padding-bottom: 30px;
+      h3 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      input {
+        width: 100%;
+        height: 50px;
+        border-radius: 100px;
+        border: 1px solid #454545;
+        padding: 15px 20px;
+        margin-top: 10px;
+      }
+    }
+    .delivery {
+      margin-top: 35px;
+      h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #454545;
+      }
+      div {
+        input {
+          width: 100%;
+          border: 1px solid #454545;
+        }
+        textarea {
+          width: 100%;
+          height: 150px;
+          border-radius: 26px;
+          margin-top: 10px;
+          resize: none;
+        }
+      }
+    }
+  }
 `;   

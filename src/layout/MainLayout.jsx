@@ -8,13 +8,15 @@ function MainLayout(props) {
     const { children } = props;
 
     return (
+      <div className=''>
         <LayoutWrapper>
-            <div>
-                <Navbar />
-                <Outlet/>
-            </div>
-            <Footer />
+          <div>
+            <Navbar />
+            <Outlet />
+          </div>
+          <Footer />
         </LayoutWrapper>
+      </div>
     );
 }
 

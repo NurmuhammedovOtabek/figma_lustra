@@ -91,80 +91,42 @@ function HomePostsHead(props) {
       </div>
       <div className="mobile-content">
         <HomePostsHeadPhone>
-          <h3 className="phoneH3">Каталог</h3>
-          <div>
+          <div className="headDiv">
+            <h3 className="phoneH3">Каталог</h3>
+          </div>
+          <div className="card">
             <div className="divCatalogPost">
               <div className="divRighr">
                 <h5 className="h5">Люстры</h5>
-                <span className="span">
-                  От 540₽ <VektorRight />
-                </span>
+                <div clssName="imgDiv">
+                  <img src={lustra} alt="" className="imgCatalog" />
+                </div>
+                <p className="span">
+                  От 540₽    <VektorRight />
+                </p>
               </div>
-              <div>
-                <img src={lustra} alt="" className="imgCatalog" />
-              </div>
+              <div></div>
             </div>
             <div className="divCatalogPost">
               <div className="divRighr">
                 <h5 className="h5">Люстры</h5>
-                <span className="span">
+                <div clssName="imgDiv">
+                  <img src={lustra} alt="" className="imgCatalog" />
+                </div>
+                <p className="span">
                   От 540₽ <VektorRight />
-                </span>
+                </p>
               </div>
-              <div>
-                <img src={lustra} alt="" className="imgCatalog" />
-              </div>
-            </div>
-            <div className="divCatalogPost">
-              <div className="divRighr">
-                <h5 className="h5">Люстры</h5>
-                <span className="span">
-                  От 540₽ <VektorRight />
-                </span>
-              </div>
-              <div>
-                <img src={lustra} alt="" className="imgCatalog" />
-              </div>
-            </div>
-            <div className="divCatalogPost">
-              <div className="divRighr">
-                <h5 className="h5">Люстры</h5>
-                <span className="span">
-                  От 540₽ <VektorRight />
-                </span>
-              </div>
-              <div>
-                <img src={lustra} alt="" className="imgCatalog" />
-              </div>
-            </div>
-            <div className="divCatalogPost">
-              <div className="divRighr">
-                <h5 className="h5">Люстры</h5>
-                <span className="span">
-                  От 540₽ <VektorRight />
-                </span>
-              </div>
-              <div>
-                <img src={lustra} alt="" className="imgCatalog" />
-              </div>
-            </div>
-            <div className="divCatalogPost">
-              <div className="divRighr">
-                <h5 className="h5">Люстры</h5>
-                <span className="span">
-                  От 540₽ <VektorRight />
-                </span>
-              </div>
-              <div>
-                <img src={lustra} alt="" className="imgCatalog" />
-              </div>
+              <div></div>
             </div>
           </div>
-          <button>
-            <span className="buttonSpan">
-              Весь каталог <VektorRight />
-            </span>
-          </button>
+          <div className="butWrapper">
+            <button>
+              <span className="buttonSpan">
+                Весь каталог <VektorRight />
+              </span>
+            </button>
+          </div>
         </HomePostsHeadPhone>
       </div>
     </HomePostsHeadS>

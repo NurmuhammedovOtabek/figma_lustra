@@ -70,4 +70,53 @@ export const PaymentBasket = styled.div`
       display: block;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 420px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    padding: 20px 20px;
+    h3 {
+      font-size: 28pxpx;
+    }
+    .basketdiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+      color: #888888;
+      font-size: 15px;
+      font-weight: 600;
+      width: 100%;
+    }
+    .price {
+      margin-top: 25px;
+    }
+    .buy {
+      margin-top: 30px;
+      flex-direction: column;
+      gap: 20px;
+      button {
+        width: 100%;
+        height: 50px;
+        border-radius: 100px;
+        background-color: #454545;
+        color: white;
+        border: none;
+      }
+      .agree {
+        
+        font-size: 12px;
+        
+      }
+      
+
+      
+    }
+  }
 `;

@@ -11,3 +11,5 @@ export { default as Dvinere } from "./src/Dvinere.icon";
 export { default as VektorRightTop } from "./src/VektorRightTop.icon";
 export { default as VektorJustRight } from "./src/VektorjustRight";
 export { default as DeletIcon } from "./src/Delet.icon";
+export { default as Burger } from "./src/Burger.icon";
+export { default as Iks } from "./src/Iks.icon";

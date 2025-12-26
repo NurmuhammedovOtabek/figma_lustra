@@ -41,6 +41,8 @@ export const MainSlider = styled.div`
     border-radius: 30px;
     gap: 25px;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     .head {
       font-size: 28px;
       font-weight: 700;
