@@ -13,7 +13,8 @@ export const MainSlider = styled.div`
   .head {
     font-size: 64px;
     font-weight: 700;
-    margin: 50px 200px 100px 200px;
+    margin: 50px auto 100px auto;
+    padding: 50px;
   }
   span {
     background-color: #454545;
@@ -37,16 +38,17 @@ export const MainSlider = styled.div`
     width: 100%;
     max-width: 330px;
     height: 525px;
-    padding: 25px 0 25px 0;
+    /* padding: 25px 0 25px 0; */
     border-radius: 30px;
-    gap: 25px;
+    gap: 20px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     .head {
       font-size: 28px;
       font-weight: 700;
-      margin: 25px 43px 68px 16px;
+      margin: 25px auto 68px auto;
+      padding: 15px;
     }
     span {
       min-width: 205px;
@@ -60,9 +62,8 @@ export const MainSlider = styled.div`
       /* width: 300px; */
       max-height: 300px;
       object-fit: contain;
-      margin-top: -45px;
-      
-      }
+      margin-top: -25px;
+    }
   }
 `;
 

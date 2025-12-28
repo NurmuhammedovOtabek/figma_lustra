@@ -9,6 +9,7 @@ export const FooterWrapper = styled.footer`
 
   .container {
     display: flex;
+    justify-content: center;
     gap: 140px;
   }
   @media screen and (max-width: 768px) {

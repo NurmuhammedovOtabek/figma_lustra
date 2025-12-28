@@ -3,6 +3,7 @@ import { VektorRight, CartIcon } from "../../../../../../../components";
 
 import lustra2 from "../../../../../../../assets/lustra2.png";
 import { GoodsMobile } from './Mobile.styled';
+import { Link } from 'react-router-dom';
 
 function Mobile(props) {
     return (
@@ -118,7 +119,9 @@ function Mobile(props) {
         </div>
         <button className="headButton">
           <span className="buttonSpan">
-            Все товары <VektorRight />
+            <Link to="/allproduct">
+              Все товары <VektorRight />
+            </Link>
           </span>
         </button>
       </GoodsMobile>

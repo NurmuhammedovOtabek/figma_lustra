@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const WrapperAboutComp = styled.div`
+a{
+  text-decoration: none;
+color: #454545;
+}
   .WrapperHead {
     display: flex;
     align-items: center;

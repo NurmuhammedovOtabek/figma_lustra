@@ -6,7 +6,7 @@ function BaskedForming(props) {
       <FormingWrapper>
         <div className="forming">
           <h3>Оформление</h3>
-          <div>
+          <div className='inputWrapper'>
             <input type="text" placeholder="ФИО" />
             <input type="tel" placeholder="телефон" />
             <input type="email" placeholder="Электронная почта" />

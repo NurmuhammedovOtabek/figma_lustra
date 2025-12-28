@@ -6,7 +6,11 @@ import {
   HomePostsHeadPhone,
   HomePostsHeadS,
 } from "./HomePostsHead.styled";
-import lustra from "../../../../../../assets/lustra.png";
+import { bra, lustra, spoti, stolniyLamp, svetliniki, torsheriki } from "../../../../../../assets";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Link } from "react-router-dom";
+
 
 function HomePostsHead(props) {
   return (
@@ -16,7 +20,9 @@ function HomePostsHead(props) {
           <h3>Каталог</h3>
           <button>
             <span className="buttonSpan">
-              Весь каталог <VektorRight />
+              <Link to="/catalog">
+                Весь каталог <VektorRight />
+              </Link>
             </span>
           </button>
         </HeadWrapper>
@@ -40,7 +46,7 @@ function HomePostsHead(props) {
               </span>
             </div>
             <div>
-              <img src={lustra} alt="" className="imgCatalog" />
+              <img src={svetliniki} alt="" className="imgCatalog" />
             </div>
           </div>
           <div className="divCatalogPost">
@@ -51,7 +57,7 @@ function HomePostsHead(props) {
               </span>
             </div>
             <div>
-              <img src={lustra} alt="" className="imgCatalog" />
+              <img src={bra} alt="" className="imgCatalog" />
             </div>
           </div>
           <div className="divCatalogPost">
@@ -62,7 +68,7 @@ function HomePostsHead(props) {
               </span>
             </div>
             <div>
-              <img src={lustra} alt="" className="imgCatalog" />
+              <img src={torsheriki} alt="" className="imgCatalog" />
             </div>
           </div>
           <div className="divCatalogPost">
@@ -73,7 +79,7 @@ function HomePostsHead(props) {
               </span>
             </div>
             <div>
-              <img src={lustra} alt="" className="imgCatalog" />
+              <img src={stolniyLamp} alt="" className="imgCatalog" />
             </div>
           </div>
           <div className="divCatalogPost">
@@ -84,7 +90,7 @@ function HomePostsHead(props) {
               </span>
             </div>
             <div>
-              <img src={lustra} alt="" className="imgCatalog" />
+              <img src={spoti} alt="" className="imgCatalog" />
             </div>
           </div>
         </CatalogPost>
@@ -95,35 +101,104 @@ function HomePostsHead(props) {
             <h3 className="phoneH3">Каталог</h3>
           </div>
           <div className="card">
-            <div className="divCatalogPost">
-              <div className="divRighr">
-                <h5 className="h5">Люстры</h5>
-                <div clssName="imgDiv">
-                  <img src={lustra} alt="" className="imgCatalog" />
+            <Swiper spaceBetween={20} slidesPerView={2}>
+              <SwiperSlide>
+                <div className="divCatalogPost">
+                  <div className="divRighr">
+                    <h5 className="h5">Люстры</h5>
+                    <div clssName="imgDiv">
+                      <img src={lustra} alt="" className="imgCatalog" />
+                    </div>
+                    <p className="span">
+                      От 540₽ <VektorRight />
+                    </p>
+                  </div>
+                  <div></div>
                 </div>
-                <p className="span">
-                  От 540₽    <VektorRight />
-                </p>
-              </div>
-              <div></div>
-            </div>
-            <div className="divCatalogPost">
-              <div className="divRighr">
-                <h5 className="h5">Люстры</h5>
-                <div clssName="imgDiv">
-                  <img src={lustra} alt="" className="imgCatalog" />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="divCatalogPost">
+                  <div className="divRighr">
+                    <h5 className="h5">Люстры</h5>
+                    <div clssName="imgDiv">
+                      <img src={svetliniki} alt="" className="imgCatalog" />
+                    </div>
+                    <p className="span">
+                      От 540₽ <VektorRight />
+                    </p>
+                  </div>
+                  <div></div>
                 </div>
-                <p className="span">
-                  От 540₽ <VektorRight />
-                </p>
-              </div>
-              <div></div>
-            </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="divCatalogPost">
+                  <div className="divRighr">
+                    <h5 className="h5">Люстры</h5>
+                    <div clssName="imgDiv">
+                      <img src={bra} alt="" className="imgCatalog" />
+                    </div>
+                    <p className="span">
+                      От 540₽ <VektorRight />
+                    </p>
+                  </div>
+                  <div></div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="divCatalogPost">
+                  <div className="divRighr">
+                    <h5 className="h5">Люстры</h5>
+                    <div clssName="imgDiv">
+                      <img src={torsheriki} alt="" className="imgCatalog" />
+                    </div>
+                    <p className="span">
+                      От 540₽ <VektorRight />
+                    </p>
+                  </div>
+                  <div></div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="divCatalogPost">
+                  <div className="divRighr">
+                    <h5 className="h5">Люстры</h5>
+                    <div clssName="imgDiv">
+                      <img src={stolniyLamp} alt="" className="imgCatalog" />
+                    </div>
+                    <p className="span">
+                      От 540₽ <VektorRight />
+                    </p>
+                  </div>
+                  <div></div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="divCatalogPost">
+                  <div className="divRighr">
+                    <h5 className="h5">Люстры</h5>
+                    <div clssName="imgDiv">
+                      <img src={spoti} alt="" className="imgCatalog" />
+                    </div>
+                    <p className="span">
+                      От 540₽ <VektorRight />
+                    </p>
+                  </div>
+                  <div></div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
           <div className="butWrapper">
             <button>
               <span className="buttonSpan">
-                Весь каталог <VektorRight />
+                <Link to="/catalog">
+                  Весь каталог <VektorRight />
+                </Link>
               </span>
             </button>
           </div>

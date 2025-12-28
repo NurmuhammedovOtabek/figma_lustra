@@ -4,6 +4,10 @@ export const HomePostsHeadS = styled.div`
   .mobile-content {
     display: none;
   }
+  a{
+    text-decoration: none;
+    color: #454545;
+  }
 
   @media screen and (max-width: 768px) {
     .mobile-content{
@@ -45,7 +49,8 @@ export const CatalogPost = styled.div`
   gap: 20px;
   margin-top: 40px;
   .divCatalogPost {
-    width: 420px;
+    max-width: 420px;
+    width: 100%;
     height: 250px;
     border-radius: 20px;
     background-color: #f2f2f2;
@@ -71,7 +76,7 @@ export const CatalogPost = styled.div`
   .imgCatalog {
     width: 180px;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
   }
 `;
 
@@ -92,12 +97,13 @@ width: 100%;
     font-weight: 700;
   }
   .divCatalogPost {
-    width: 160px;
+    min-width: 160px;
+    width: 100%;
     height: 190px;
     border-radius: 20px;
     background-color: #f2f2f2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px 20px;
     margin-top: 30px;
   }
@@ -124,19 +130,23 @@ width: 100%;
       align-items: center;
     }
     .imgCatalog {
-      width: 80px;
+      width: 100%;
+      min-width: 80px;
       height: 90px;
-      object-fit: cover;
+      object-fit: contain;
       margin: 10px;
     }
   }
   button {
     width: 100%;
-    max-width: 325px;
-    max-height: 50px;
+    /* max-width: 325px; */
+    height: 50px;
     border: 1px solid #454545;
     border-radius: 100px;
-    padding: 15px 100px;
+    /* padding: 15px 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     margin-top: 30px;
   }

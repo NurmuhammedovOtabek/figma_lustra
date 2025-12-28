@@ -24,6 +24,7 @@ export const SearchWrapper = styled.div`
         color: ${textColors.white};
         font-size: 16px;
         font-weight: 600;
+        cursor: pointer;
     }
 
     .input-wrapper {

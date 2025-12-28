@@ -31,7 +31,7 @@ export const MiddlePost = styled.div`
     gap: 20px;
     margin-top: 40px;
     div {
-      width: 310px;
+      width: 100%;
       height: 360px;
       border: 1px solid #d9d9d9;
       padding: 40px;
@@ -60,7 +60,14 @@ export const MiddlePost = styled.div`
 `;
 
 export const MiddlePostWrapper = styled.div`
-  .mobile {
+  a {
+    text-decoration: none;
+    color: #454545;
+  }
+  .buttonSpan{
+    cursor: pointer;
+  }
+   .mobile {
     display: none;
   }
 
@@ -68,7 +75,7 @@ export const MiddlePostWrapper = styled.div`
     .mobile {
       display: block;
     }
-    .desctop{
+    .desctop {
       display: none;
     }
   }
@@ -97,7 +104,7 @@ export const MiddlePostMobile = styled.div`
     width: 100%;
     div {
       width: 100%;
-      max-width: 160px;
+      /* max-width: 160px; */
       height: 230px;
       border: 1px solid #d9d9d9;
       padding: 15px;
@@ -127,12 +134,16 @@ export const MiddlePostMobile = styled.div`
     margin-top: 32px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 325px;
+    /* max-width: 325px; */
+    width: 100%;
     max-height: 50px;
     border: 1px solid #454545;
     border-radius: 100px;
     padding: 14px 100px;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   span {
     font-size: 16px;

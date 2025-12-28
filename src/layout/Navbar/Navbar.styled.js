@@ -119,3 +119,48 @@ export const CustomNavLinkBurger = styled(NavLink)`
   padding-bottom: 20px;
   cursor: pointer;
 `;
+
+export const CatalogButton = styled.div`
+
+.catalog-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+        height: 50px;
+        padding: 14px 28px;
+        border-radius: 100px;
+        background-color: ${bgColors.primary};
+        border: none;
+        color: ${textColors.white};
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+`
+
+    export const OrderPhoneButton = styled.button`
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: ${textColors.secondary};
+`;
+
+export const PhoneLink = styled.a`
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: ${textColors.primary};
+`;
+
+export const NavTopSide = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+`;

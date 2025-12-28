@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const FormingWrapper = styled.div`
-  width: 1300px;
+  max-width: 1300px;
+  width: 100%;
   height: 630px;
   border-radius: 20px;
   background-color: #f2f2f2;
@@ -16,8 +17,13 @@ export const FormingWrapper = styled.div`
       color: #454545;
       margin-bottom: 30px;
     }
+    .inputWrapper {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
     input {
-      width: 373px;
+      width: 100%;
+      max-width: 373px;
       height: 50px;
       border-radius: 100px;
       border: 1px solid #454545;
@@ -72,6 +78,9 @@ export const FormingWrapper = styled.div`
         font-size: 28px;
         font-weight: 700;
         margin-bottom: 20px;
+      }
+      .inputWrapper {
+        grid-template-columns: auto ;
       }
       input {
         width: 100%;

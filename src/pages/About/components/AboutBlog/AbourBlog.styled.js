@@ -47,7 +47,8 @@ export const Ads = styled.div`
   .ads {
     display: flex;
     justify-content: center;
-    width: 310px;
+    max-width: 310px;
+    width: 100%;
     height: 110px;
     border: 1px solid #d9d9d9;
     text-align: center;
@@ -135,11 +136,13 @@ margin-bottom: 150px;
     gap: 20px;
     margin-top: 50px;
     .blogFotoDiv {
-      width: 420px;
+      width: 100%;
+      max-width: 420px;
       /* height: 455px; */
       border-bottom: 0.5px solid gray;
       img {
-        width: 420px;
+        width: 100%;
+        max-width: 420px;
         height: 320px;
         object-fit: cover;
       }

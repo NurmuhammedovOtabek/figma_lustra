@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BasketKozinaMain } from './BasketKorzina.styed';
 import { DeletIcon, VektorJustRight } from '../../../../components';
 import lustra from '../../../../assets/lustra2.png'
+import { Link } from 'react-router-dom';
 function BasketKorzina(props) {
     const [count, setCount] = useState(1)
     const [count1, setCount1] = useState(1);
@@ -10,9 +11,14 @@ function BasketKorzina(props) {
       <BasketKozinaMain>
         <div>
           <p className="kP">
-            <span className="kSpan">Главная</span>{" "}
+            <span className="kSpan">
+              <Link to="/">Главная</Link>
+            </span>{" "}
             <VektorJustRight color="#454545" />
-            <span className="kSpan">Каталог</span> <VektorJustRight />
+            <span className="kSpan">
+              <Link to="/catalog">Каталог</Link>
+            </span>{" "}
+            <VektorJustRight />
             Корзина
           </p>
           <h2 className="kH2">Корзина</h2>

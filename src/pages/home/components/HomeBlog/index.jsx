@@ -13,6 +13,7 @@ import { Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 function HomeBlog(props) {
   return (
     <div className="container">
@@ -31,7 +32,7 @@ function HomeBlog(props) {
         <div className="adsWrapper">
           <div className="ads">
             <div>
-              <Arte />
+              <img src={AlteP} alt="" />
             </div>
           </div>
           <div className="ads">
@@ -47,7 +48,7 @@ function HomeBlog(props) {
           </div>
           <div className="ads">
             <div>
-              <Arte />
+              <img src={AlteP} alt="" />
             </div>
           </div>
         </div>
@@ -89,8 +90,10 @@ function HomeBlog(props) {
           <p>Блог</p>
           <div>
             <button>
-              Перейти в блог
-              <VektorRight />
+              <Link to="/blog">
+                Перейти в блог
+                <VektorRight />
+              </Link>
             </button>
           </div>
         </div>
@@ -162,7 +165,12 @@ function HomeBlog(props) {
             </SwiperSlide>
           </Swiper>
           <div className="buttonDiv">
-            <button>Перейти в блог <VektorRight/></button>
+            <button>
+              <Link to="/blog">
+                Перейти в блог
+                <VektorRight />
+              </Link>
+            </button>
           </div>
         </div>
       </Blog>

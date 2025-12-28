@@ -3,6 +3,7 @@ import { GoodsDesctop } from './Descktop.styled';
 import { VektorRight, CartIcon } from "../../../../../../../components";
 
 import lustra2 from "../../../../../../../assets/lustra2.png";
+import { Link } from 'react-router-dom';
 
 function Goods(props) {
     return (
@@ -11,7 +12,9 @@ function Goods(props) {
           <h3 className="headH3">Популярные товары</h3>
           <button className="headButton">
             <span className="buttonSpan">
-              Все товары <VektorRight />
+              <Link to="/allproduct">
+                Все товары <VektorRight />
+              </Link>
             </span>
           </button>
         </div>

@@ -4,13 +4,17 @@ import NavbarMain from "./components/NavbarMain";
 
 import {
   BurgerNav,
+  CatalogButton,
   CustomNavLinkBurger,
   MobileInput,
   MobileNavbarWrapper,
   NavbarWrapper,
+  NavTopSide,
   NavTopSideBurger,
+  OrderPhoneButton,
+  PhoneLink,
 } from "./Navbar.styled";
-import { Burger, CartIcon, HeartIcon, Iks, SearchIcon } from "../../components";
+import { Burger, CartIcon, CatalogIcon, HeartIcon, Iks, SearchIcon } from "../../components";
 import { Link, NavLink } from "react-router-dom";
 
 function Navbar(props) {
@@ -50,7 +54,7 @@ function Navbar(props) {
           </div>
           <div className="icons">
             <div className="item">
-              <NavLink to="/">
+              <NavLink to="/favorites">
                 <HeartIcon />
               </NavLink>
             </div>
@@ -74,13 +78,27 @@ function Navbar(props) {
         <BurgerNav>
           <NavTopSideBurger>
             <CustomNavLinkBurger to="/about">О компании</CustomNavLinkBurger>
-            <CustomNavLinkBurger to="/">Доставка и оплата</CustomNavLinkBurger>
-            <CustomNavLinkBurger to="/">Возврат</CustomNavLinkBurger>
-            <CustomNavLinkBurger to="/">Гарантии</CustomNavLinkBurger>
-            <CustomNavLinkBurger to="/">Контакты</CustomNavLinkBurger>
-            <CustomNavLinkBurger to="/">Блог</CustomNavLinkBurger>
+            <CustomNavLinkBurger to="/shipping">
+              Доставка и оплата
+            </CustomNavLinkBurger>
+            <CustomNavLinkBurger to="/return">Возврат</CustomNavLinkBurger>
+            <CustomNavLinkBurger to="/garant">Гарантии</CustomNavLinkBurger>
+            <CustomNavLinkBurger to="/contact">Контакты</CustomNavLinkBurger>
+            <CustomNavLinkBurger to="/blog">Блог</CustomNavLinkBurger>
           </NavTopSideBurger>
         </BurgerNav>
+      <CatalogButton>
+        <Link to="/catalog">
+          <button className="catalog-button">
+            <CatalogIcon />
+            <span>Каталог</span>
+          </button>
+        </Link>
+        <NavTopSide>
+                  <PhoneLink href="tel:88008904656">8 (800) 890-46-56</PhoneLink>
+                  <OrderPhoneButton>Заказать звонок</OrderPhoneButton>
+                </NavTopSide>
+      </CatalogButton>
       </div>
     </NavbarWrapper>
   );

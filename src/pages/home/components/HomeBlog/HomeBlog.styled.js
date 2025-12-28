@@ -39,7 +39,8 @@ export const Ads = styled.div`
   .ads {
     display: flex;
     justify-content: center;
-    width: 310px;
+    align-items: center ;
+    width: 100%;
     height: 110px;
     border: 1px solid #d9d9d9;
     text-align: center;
@@ -96,6 +97,10 @@ export const Ads = styled.div`
 `; 
 
 export const Blog = styled.div`
+a{
+  text-decoration: none;
+  color: #454545;
+}
   .blogFotoMobile {
     display: none;
   }
@@ -123,12 +128,14 @@ export const Blog = styled.div`
     grid-template-columns: auto auto auto;
     gap: 20px;
     margin-top: 50px;
+    width: 100%;
     .blogFotoDiv {
-      width: 420px;
+      width: 100%;
       /* height: 455px; */
       border-bottom: 0.5px solid gray;
       img {
-        width: 420px;
+        width: 100%;
+        max-width: 420px;
         height: 320px;
         object-fit: cover;
       }
@@ -201,16 +208,16 @@ export const Blog = styled.div`
     .blogFotoMobile {
       display: block;
       width: 100%;
-      /* grid-template-columns: auto auto auto;
-      gap: 20px; */
+      /* grid-template-columns: auto auto auto;*/
+      /* gap: 20px;  */
       margin-top: 50px;
       .blogFotoDiv {
-        width: 330px;
+        width: 100%;
         height: 455px;
         border-bottom: 0.5px solid gray;
-
+        padding: 5px;
         img {
-          width: 330px;
+          width: 100%;
           height: 300px;
           border-radius: 10px;
           object-fit: cover;
@@ -239,12 +246,12 @@ export const Blog = styled.div`
           font-size: 16px;
           font-weight: 500;
           color: #454545;
-          width: 330px;
+          width: 100%;
           height: 50px;
           border: 1px solid #454545;
           border-radius: 100px;
           margin-top: 75px;
-          background-color: #FFFFFF;
+          background-color: #ffffff;
         }
       }
     }

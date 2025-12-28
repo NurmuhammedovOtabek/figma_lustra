@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const PaymentBasket = styled.div`
-  width: 1300px;
+  max-width: 1300px;
+  width: 100%;
   height: 360px;
   border-radius: 20px;
   background-color: #f2f2f2;

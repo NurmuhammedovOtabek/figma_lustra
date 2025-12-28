@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const GoodsMobile = styled.div`
+a{
+  text-decoration: none;
+  color: #454545;
+}
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
@@ -17,7 +21,7 @@ export const GoodsMobile = styled.div`
   }
   .headButton {
     margin-top: 30px;
-    width: 325px;
+    width: 100%;
     height: 50px;
     border: 1px solid #454545;
     border-radius: 100px;
@@ -40,7 +44,7 @@ export const GoodsMobile = styled.div`
 
     & > div {
       width: 100%;
-      max-width: 160px;
+      /* max-width: 160px; */
       height: 280px;
       padding: 20px;
       display: flex;

@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const BasketKozinaMain = styled.div`
+  a{
+    text-decoration: none;
+    color: #454545;
+  }
   .korzinaMobile {
     display: none;
   }
@@ -21,7 +25,8 @@ export const BasketKozinaMain = styled.div`
     color: #454545;
   }
   .korzina {
-    width: 1300px;
+    width: 100%;
+    max-width: 1300px;
     height: 385px;
     background-color: #f2f2f2;
     border-radius: 20px;

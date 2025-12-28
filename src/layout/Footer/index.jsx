@@ -42,13 +42,13 @@ function Footer(props) {
             <h3>Покупателям</h3>
             <div>
               <CustomNavLinkFooter to="/about">О компании</CustomNavLinkFooter>
-              <CustomNavLinkFooter to="/">
+              <CustomNavLinkFooter to="/shipping">
                 Доставка и оплата
               </CustomNavLinkFooter>
-              <CustomNavLinkFooter to="/">Возврат</CustomNavLinkFooter>
-              <CustomNavLinkFooter to="/">Гарантии</CustomNavLinkFooter>
-              <CustomNavLinkFooter to="/">Контакты</CustomNavLinkFooter>
-              <CustomNavLinkFooter to="/">Блог</CustomNavLinkFooter>
+              <CustomNavLinkFooter to="/return">Возврат</CustomNavLinkFooter>
+              <CustomNavLinkFooter to="/garant">Гарантии</CustomNavLinkFooter>
+              <CustomNavLinkFooter to="/contact">Контакты</CustomNavLinkFooter>
+              <CustomNavLinkFooter to="/blog">Блог</CustomNavLinkFooter>
             </div>
           </ForBuyFooter>
           <ProductFooter>

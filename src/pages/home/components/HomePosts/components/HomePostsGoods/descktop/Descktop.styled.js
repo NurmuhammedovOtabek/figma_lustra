@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const GoodsDesctop = styled.div`
+a{
+  text-decoration: none;
+  color: #454545;
+}
   .goodsHead {
     display: flex;
     justify-content: space-between;

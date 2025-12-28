@@ -13,3 +13,6 @@ export { default as VektorJustRight } from "./src/VektorjustRight";
 export { default as DeletIcon } from "./src/Delet.icon";
 export { default as Burger } from "./src/Burger.icon";
 export { default as Iks } from "./src/Iks.icon";
+export { default as GrowPrice } from "./src/GrowPrice";
+export { default as Delivry } from "./src/Delivry.icon";
+export { default as Assorti } from "./src/Assorti.icon";
